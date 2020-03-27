@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Sergey Zamaletdinov](https://up.htmlacademy.ru/adaptive/19/user/192229).
-* Наставник: `Неизвестно`.
+* Студент: [Сергей Замалетдинов](https://up.htmlacademy.ru/adaptive/19/user/192229).
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
