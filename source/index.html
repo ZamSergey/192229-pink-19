@@ -5,23 +5,23 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-   <header class="page-header">
-     <div class="logo page-header__logo">Pink</div>
-     <nav class="main-nav">
-       <button class="main-nav__toggle" type="button">Показать меню</button>
+    <header class="page-header">
+      <a href="/index.html" class="logo page-header__logo">Pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Показать меню</button>
 <!--Пока не понял насколько нужна обертка т.к. в мобильной версии есть всего два блока-->
-       <div class="main-nav__wrapper">
-         <ul class="main-nav__list site__list">
-           <li class="site-list__item site-list__item--active">Главная</li>
-           <li class="site-list__item">Фотографии</li>
-           <li class="site-list__item">Конкурс</li>
-           <li class="site-list__item">HTML Academy</li>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
          </ul>
        </div>
      </nav>
    </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Заголовок главной страницы</h1>
+    <main class="page-main">
+      <h1 class="visually-hidden">Заголовок главной страницы</h1>
     <section class="download">
       <button class="download__app" type="button">Скачать приложение</button>
       <div class="download__devices devices-list">
@@ -30,7 +30,7 @@
         <div class="devices-list__img devices-list__img--windows"></div>
       </div>
       <p class="download__description">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </section>
     <section class="offer">

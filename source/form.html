@@ -6,16 +6,16 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo page-header__logo">Pink</div>
+      <a href="/index.html" class="logo page-header__logo">Pink</a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Показать меню</button>
         <!--Пока не понял насколько нужна обертка т.к. в мобильной версии есть всего два блока-->
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site__list">
-            <li class="site-list__item">Главная</li>
-            <li class="site-list__item">Фотографии</li>
-            <li class="site-list__item site-list__item--active">Конкурс</li>
-            <li class="site-list__item">HTML Academy</li>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item "><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item site-list__item--active"><a href="#">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -44,7 +44,10 @@
       </div>
       <div class="page-footer__site-developer">
         <p class="page-footer__developer"></p>
-        <img src="https://via.placeholder.com/29x37" alt="HTMLAcademy" width="29" height="37" class="page-footer__developer-img">
+        <a href="https://htmlacademy.ru/" class="page-footer__developer-link">
+          <img src="https://via.placeholder.com/29x37" alt="HTMLAcademy" width="29" height="37"
+                          class="page-footer__developer-img">
+        </a>
       </div>
     </footer>
   </body>
