@@ -9,7 +9,6 @@
       <a href="/index.html" class="logo page-header__logo">Pink</a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Показать меню</button>
-        <!--Пока не понял насколько нужна обертка т.к. в мобильной версии есть всего два блока-->
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item "><a href="index.html">Главная</a></li>
@@ -24,6 +23,94 @@
       <h1 class="page-main__h1">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
+      <form action="" class="feedback">
+        <p class="feedback__title">
+          Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <fieldset class="feedback__fieldset feedback__fieldset--white">
+          <label class="feedback__surname">
+            <span class="feedback__fild-title">Фамилия:</span>
+            <input type="text" name="feedback_surname" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="feedback__name">
+            <span class="feedback__fild-title">Имя:</span>
+            <input type="text" name="feedback_name" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="feedback__patronymic">
+            <span class="feedback__fild-title">Отчество:</span>
+            <input type="text" name="feedback_patronymic" placeholder="Ну и отчество тоже" required>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset feedback__fieldset--grey">
+          <p class="feedback__fieldset-title">
+            Ваши безбашенные<br>
+            достижения в путешествии
+          </p>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Сделал селфи с акулой</span>
+            <input type="checkbox" name="check_shark" >
+          </label>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Обгорел на пляже</span>
+            <input type="checkbox" name="check_beach" >
+          </label>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Видел Чака Норриса</span>
+            <input type="checkbox" name="check_chak">
+          </label>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Накупил сувениров</span>
+            <input type="checkbox" name="check_gift" >
+          </label>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Удержал башню</span>
+            <input type="checkbox" name="check_tower" >
+          </label>
+          <label class="feedback__achievement">
+            <span class="feedback__check-title">Разгромил отель</span>
+            <input type="checkbox" name="check_hotel">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset feedback__fieldset--white">
+          <label class="feedback__surname">
+            <span class="feedback__fild-title">Номер телефона</span>
+            <input type="tel" name="feedback_phone" placeholder="Номер, пожалуйста ">
+          </label>
+          <label class="feedback__name">
+            <span class="feedback__fild-title">Адрес почты</span>
+            <input type="email" name="feedback_email" placeholder="Введите почту *" required>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset feedback__fieldset--grey">
+          <p class="feedback__fieldset-title">
+            С каким приложением<br>
+            путешествовали?
+          </p>
+          <label class="feedback__devise-type">
+            <span class="feedback__check-title">Pink для iOS</span>
+            <input type="radio" name="feedback_devise_type" >
+          </label>
+          <label class="feedback__devise-type">
+            <span class="feedback__check-title">Pink на Android</span>
+            <input type="radio" name="feedback_devise_type" >
+          </label>
+          <label class="feedback__devise-type">
+            <span class="feedback__check-title">Windows Phone</span>
+            <input type="radio" name="feedback_devise_type">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset feedback__fieldset--white">
+          <p class="feedback__fieldset-title">Опишите свои эмоции
+          </p>
+          <textarea name="feedback_feeling"  cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+          <button class="button button--rect" type="button">
+            Отправить форму
+          </button>
+        <p class="feedback__explanation"> * — обязательные поля</p>
+
+
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
