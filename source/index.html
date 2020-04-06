@@ -5,8 +5,55 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a href="/index.html" class="logo page-header__logo">Pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Показать меню</button>
+        <!--Пока не понял насколько нужна обертка т.к. в мобильной версии есть всего два блока-->
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Заголовок главной страницы</h1>
+    <section class="download">
+      <button class="download__app" type="button">Скачать приложение</button>
+      <div class="download__devices devices-list">
+        <div class="devices-list__img devices-list__img--mac"></div>
+        <div class="devices-list__img devices-list__img--android"></div>
+        <div class="devices-list__img devices-list__img--windows"></div>
+      </div>
+      <p class="download__description">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </section>
+    <section class="offer">
+      <h2 class="visually-hidden">Наши предложения</h2>
+      <div class="offer__header">
+        <p class="offer__description">Устали от серости мегаполиса?</p>
+        <p class="offer__description">Нам есть, что вам  предложить!</p>
+      </div>
+      <ul class="offer__list">
+        <li class="offer__item">
+          <h3 class="offer__title">Поднимает настроение</h3>
+          <p class="offer__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="offer__item">
+          <h3 class="offer__title">Меняет мир вокруг</h3>
+          <p class="offer__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="offer__item">
+          <h3 class="offer__title">Заводит новых друзей</h3>
+          <p class="offer__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+  </main>
   </body>
 </html>
