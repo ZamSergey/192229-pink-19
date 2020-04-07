@@ -9,7 +9,6 @@
       <a href="/index.html" class="logo page-header__logo">Pink</a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Показать меню</button>
-        <!--Пока не понял насколько нужна обертка т.к. в мобильной версии есть всего два блока-->
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
@@ -46,6 +45,34 @@
             </p>
           </li>
         </ul>
+      </section>
+      <section class="send-photo">
+        <h2 class="visually-hidden">Форма для отправки фотографий</h2>
+        <p class="img-sender__title">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!</p>
+        <form action="https://echo.htmlacademy.ru" class="send-photo__form img-sender">
+          <label class="img-sender__img-input">
+            <input type="file" name="user_photo" multiple>
+          </label>
+          <div class="img-sender__tools tools">
+            <label class="tools__check tools__check--crop">
+              <input type="radio" name="tools" id="crop">
+            </label>
+            <label class="tools__check tools__check--blur">
+              <input type="radio" name="tools" id="blur">
+            </label>
+            <label class="tools__check tools__check--contrast">
+              <input type="radio" name="tools" id="contrast">
+            </label>
+
+            <label class="tools__slider">
+              <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+            </label>
+            <hr class="img-sender__separator">
+            <button class="button button--oval">Запостить</button>
+            <button class="button button--oval button--cancel">Отмена</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
