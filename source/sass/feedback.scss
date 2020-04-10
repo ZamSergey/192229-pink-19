@@ -1,0 +1,34 @@
+@import 'mixins';
+@import 'colors';
+
+.feedback__title {
+  @include font-param(14px, normal, 30px);
+  text-align: center;
+}
+.feedback__fild-title{
+  @include font-param(14px, normal, 30px);
+  color: $color-pink;
+}
+.feedback__surname input, .feedback__name input, .feedback__patronymic input{
+  @include font-param(18px, normal, 30px);
+  color: $color-black;
+}
+
+.feedback__fieldset-title {
+  @include font-param(14px, normal, 18px);
+  color: $color-pink;
+}
+
+.feedback__check-title {
+  @include font-param(18px, normal, 30px);
+}
+
+.feeback__sup{
+  color: $color-pink;
+}
+
+.feedback__explanation {
+  @include font-param(14px, normal, 30px);
+  text-transform: uppercase;
+  text-align: center;
+}

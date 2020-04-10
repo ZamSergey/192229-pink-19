@@ -1,0 +1,15 @@
+@import 'mixins';
+
+.offer__prev-text {
+  @include font-param(24px, lighter);
+  text-align: center;
+}
+
+.offer__title{
+  @include font-param(18px, normal, 24px);
+}
+
+.offer__description {
+  @include font-param(14px, lighter, 24px);
+  text-align: center;
+}

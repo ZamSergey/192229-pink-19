@@ -1,0 +1,7 @@
+//Set font
+@mixin font-param($font_size, $font-weight : normal, $line-height : normal) {
+  font-family: opensans, opensans2;
+  font-size: $font_size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}

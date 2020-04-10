@@ -1,0 +1,17 @@
+@import 'mixins';
+
+.prises__title {
+  @include font-param(18px, bold, 30px);
+  text-align: center;
+  margin: 0;
+}
+
+.prises__prise {
+  @include font-param(24px, lighter, 30px);
+  text-align: center;
+  margin: 0;
+}
+
+.prises__hot-mark{
+
+}

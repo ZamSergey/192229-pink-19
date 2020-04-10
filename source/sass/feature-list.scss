@@ -1,0 +1,6 @@
+@import 'mixins';
+
+.feature-list__title {
+  @include font-param(14px, normal, 30px);
+
+}
