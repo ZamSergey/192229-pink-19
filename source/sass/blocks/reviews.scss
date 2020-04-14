@@ -1,4 +1,5 @@
-@import 'mixins';
+@import '../variables';
+@import '../mixins';
 
 .reviews__user {
   @include font-param(18px, bold, 30px);

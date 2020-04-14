@@ -1,4 +1,5 @@
-@import 'colors';
+@import '../variables';
+@import '../mixins';
 
 .page-footer {
   background-color: $color-white;

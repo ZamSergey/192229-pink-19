@@ -1,5 +1,5 @@
-@import 'mixins';
-@import 'colors';
+@import '../variables';
+@import '../mixins';
 
 .feedback__title {
   @include font-param(14px, normal, 30px);

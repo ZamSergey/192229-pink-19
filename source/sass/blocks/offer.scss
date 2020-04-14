@@ -1,4 +1,5 @@
-@import 'mixins';
+@import '../variables';
+@import '../mixins';
 
 .offer__prev-text {
   @include font-param(24px, lighter);

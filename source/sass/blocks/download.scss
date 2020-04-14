@@ -1,5 +1,5 @@
-@import 'colors';
-@import 'mixins';
+@import '../variables';
+@import '../mixins';
 
 .download__app {
   @include font-param(18px, bold, normal);

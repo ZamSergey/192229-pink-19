@@ -1,6 +1,5 @@
-@import 'mixins';
-@import 'colors';
-
+@import '../variables';
+@import '../mixins';
 .button {
   @include font-param(18px, normal, 30px)
 }

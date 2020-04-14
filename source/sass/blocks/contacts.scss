@@ -1,5 +1,5 @@
-@import 'mixins';
-@import 'colors';
+@import '../variables';
+@import '../mixins';
 
 .contacts__title {
   @include font-param(24px, lighter);
