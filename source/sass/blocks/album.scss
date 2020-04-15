@@ -1,7 +1,3 @@
-@import '../variables';
-@import '../mixins';
-
-
 .album__title{
   @include font-param(14px, lighter, 30px);
   text-align: center;
