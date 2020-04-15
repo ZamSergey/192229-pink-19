@@ -1,0 +1,9 @@
+.reviews__user {
+  @include font-param(18px, bold, 30px);
+  text-align: center;
+}
+
+.reviews__text {
+  @include font-param(14px, normal, 30px);
+  text-align: center;
+}
