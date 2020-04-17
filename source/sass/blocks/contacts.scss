@@ -1,20 +1,20 @@
 .contacts {
   margin: 0 -20px;
   padding: 40px 0;
-
 }
+
 .contacts__title {
-  @include font-param (24px, lighter);
+  @include font-param(24px, lighter);
   text-align: center;
 }
 
 .contacts__info-title {
-  @include font-param (18px, bold);
+  @include font-param(18px, bold);
   text-align: center;
 }
 
 .contacts__info {
-  @include font-param (24px, lighter);
+  @include font-param(24px, lighter);
   text-align: center;
   color: $color-pink ;
   display: inline-block;

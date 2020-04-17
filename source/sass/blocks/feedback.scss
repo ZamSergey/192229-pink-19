@@ -17,7 +17,6 @@
   background-color: $color-grey-light;
   margin: 0 -20px;
   padding: 40px 20px;
-
 }
 
 .feedback__lable {
@@ -36,23 +35,25 @@
 }
 
 .feedback__title {
-  @include font-param (14px, normal, 30px);
+  @include font-param(14px, normal, 30px);
   text-align: center;
   margin: 0;
 }
+
 .feedback__fild-title {
-  @include font-param (14px, normal, 30px);
+  @include font-param(14px, normal, 30px);
   padding-left: 20px;
   color: $color-pink;
   text-transform: uppercase;
 }
+
 .feedback__surname input, .feedback__name input, .feedback__patronymic input {
-  @include font-param (18px, normal, 30px);
+  @include font-param(18px, normal, 30px);
   color: $color-black;
 }
 
 .feedback__fieldset-title {
-  @include font-param (14px, normal, 18px);
+  @include font-param(14px, normal, 18px);
   color: $color-pink;
   text-transform: uppercase;
   text-align: center;
@@ -60,7 +61,7 @@
 }
 
 .feedback__check-title {
-  @include font-param (18px, normal, 30px);
+  @include font-param(18px, normal, 30px);
 }
 
 .feeback__sup {
@@ -68,7 +69,7 @@
 }
 
 .feedback__explanation {
-  @include font-param (14px, normal, 30px);
+  @include font-param(14px, normal, 30px);
   text-transform: uppercase;
   text-align: center;
 }

@@ -9,13 +9,15 @@
   background-color: $color-darkblue;
   text-align: center;
   border-top: 1px solid black;
+
   &:last-of-type {
     border-bottom: 1px solid black;
   }
+
   a {
     display: block;
     color: $color-white;
-    font-family: opensans, opensans2;
+    font-family: opensans;
     font-size: 18px;
     line-height: 32px;
     font-weight: bold;
