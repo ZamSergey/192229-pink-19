@@ -2,7 +2,7 @@
   @include font-param(18px, bold, 44px);
   display: block;
   text-decoration: none;
-  border:3px solid $color-pink;
+  border: 3px solid $color-pink;
   color: $color-pink;
   border-radius: 50px;
   width: 280px;
@@ -13,11 +13,11 @@
 }
 
 .button--cancel {
-  color:$color-grey-lighter;
+  color: $color-grey-lighter;
   border-color: $color-grey-lighter;
 }
 
 .button--white{
-  color:$color-white;
+  color: $color-white;
   border-color: $color-white;
 }

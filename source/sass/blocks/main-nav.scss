@@ -3,22 +3,14 @@
   margin: 0 -20px;
 }
 
-.main-nav__logo{
+.main-nav__logo {
   padding-left: 20px;
 }
 
-.main-nav__header{
+.main-nav__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.main-nav__wrapper{
-
-}
-
-.main-nav__list {
-
 }
 
 .main-nav__toggle {
@@ -26,12 +18,9 @@
   position: relative;
   width: 90px;
   height: 66px;
-
   background-color: $color-darkblue;
-
   cursor: pointer;
   border: none;
-
   &:hover,
   &:active {
     background-color: $color-darkblue;
@@ -41,27 +30,21 @@
   top: 0;
   right: auto;
   left: 0;
-
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     width: 32px;
     height: 3px;
-
     background-color: #ffffff;
   }
-
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
-
   &::after {
     transform: rotate(-45deg);
   }
-
   &:active::before,
   &:active::after {
     background-color: rgba(255, 255, 255, 0.3);

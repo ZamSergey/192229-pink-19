@@ -1,16 +1,16 @@
-.download{
+.download {
   margin: 0 -20px;
   padding: 20px 0;
   background-color: $color-darkblue;
 }
-.download__button{
+.download__button {
   margin: 0 auto 20px;
 }
-.download__devices{
+.download__devices {
   margin-bottom: 20px;
 }
 .download__description {
-  @include font-param(14px, lighter, 24px);
+  @include font-param (14px, lighter, 24px);
   text-align: center;
   color: $color-white;
 }

@@ -1,8 +1,8 @@
-.album__item{
+.album__item {
   margin-bottom: 20px;
 }
 
-.album__title{
+.album__title {
   @include font-param(14px, lighter, 30px);
   text-align: center;
   padding: 50px 0;

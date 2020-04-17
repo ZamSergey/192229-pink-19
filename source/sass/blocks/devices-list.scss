@@ -1,4 +1,4 @@
-.devices-list{
+.devices-list {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -9,18 +9,6 @@
   margin-right: 30px;
 }
 
-.devices-list__img:last-of-type{
+.devices-list__img:last-of-type {
   margin-right: 0;
-}
-
-.devices-list__img--mac{
-
-}
-
-.devices-list__img--android{
-
-}
-
-.devices-list__img--windows{
-
 }
