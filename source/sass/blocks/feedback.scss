@@ -47,7 +47,9 @@
   text-transform: uppercase;
 }
 
-.feedback__surname input, .feedback__name input, .feedback__patronymic input {
+.feedback__surname input,
+.feedback__name input,
+.feedback__patronymic input {
   @include font-param(18px, normal, 30px);
   color: $color-black;
 }

@@ -16,7 +16,7 @@
 .contacts__info {
   @include font-param(24px, lighter);
   text-align: center;
-  color: $color-pink ;
+  color: $color-pink;
   display: inline-block;
   text-decoration: none;
 }
