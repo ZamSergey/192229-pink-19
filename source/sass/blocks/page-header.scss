@@ -1,5 +1,12 @@
 .page-header {
 
   background:$color-darkblue url('/img/bg-back-mobile@1x.jpg') no-repeat center bottom;
-  padding: 0 20px;
+  padding: 0 20px 80px;
+}
+
+.page-header__h1{
+  @include font-param(24px, lighter, normal );
+  text-align: center;
+  color:$color-white;
+  margin-top:30px;
 }

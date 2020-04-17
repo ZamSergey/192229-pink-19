@@ -1,4 +1,26 @@
 .page-footer {
   background-color: $color-white;
-  padding: 0 20px;
+  padding: 40px 20px;
+}
+
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.page-footer__developer-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__developer {
+  margin-right: 12px;
+}
+
+.page-footer__social {
+  margin-bottom: 36px;
 }

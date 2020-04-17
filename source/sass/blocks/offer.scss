@@ -1,13 +1,45 @@
-.offer__prev-text {
-  @include font-param(24px, lighter);
-  text-align: center;
-}
-
-.offer__title{
-  @include font-param(18px, normal, 24px);
+.offer {
+  background-color: $color-white;
+  background-image: url('../../img/iphone-screen-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0 -20px;
+  padding: 45px 0 0;
 }
 
 .offer__description {
   @include font-param(14px, lighter, 24px);
   text-align: center;
+}
+
+.offer__list {
+  list-style: none;
+  margin: 0;
+  padding: 50px 0;
+  background-color: $color-grey-light;
+}
+
+.offer__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offer__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.offer__header {
+  margin-bottom: 50px;
+}
+
+.offer__prev-text {
+  @include font-param(24px, lighter);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.offer__title {
+  @include font-param(18px, bold, 24px);
+  margin: 0;
+
 }
