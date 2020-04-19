@@ -1,12 +1,55 @@
+.feedback {
+  padding-top: 40px;
+}
+
+.feedback__fieldset {
+  border: none;
+  padding: 40px 0;
+  margin: 0;
+  display: flex;
+}
+
+.feedback__fieldset :last-child {
+  margin-bottom: 0;
+}
+
+.feedback__fieldset--grey {
+  background-color: $color-grey-light;
+  margin: 0 -20px;
+  padding: 40px 20px;
+}
+
+.feedback__lable {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.feedback__achievement {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: baseline;
+}
+
+.feedback__achievement input {
+  margin-right: 30px;
+}
+
 .feedback__title {
   @include font-param(14px, normal, 30px);
   text-align: center;
+  margin: 0;
 }
-.feedback__fild-title{
+
+.feedback__fild-title {
   @include font-param(14px, normal, 30px);
+  padding-left: 20px;
   color: $color-pink;
+  text-transform: uppercase;
 }
-.feedback__surname input, .feedback__name input, .feedback__patronymic input{
+
+.feedback__surname input,
+.feedback__name input,
+.feedback__patronymic input {
   @include font-param(18px, normal, 30px);
   color: $color-black;
 }
@@ -14,13 +57,16 @@
 .feedback__fieldset-title {
   @include font-param(14px, normal, 18px);
   color: $color-pink;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px;
 }
 
 .feedback__check-title {
   @include font-param(18px, normal, 30px);
 }
 
-.feeback__sup{
+.feeback__sup {
   color: $color-pink;
 }
 
@@ -28,4 +74,13 @@
   @include font-param(14px, normal, 30px);
   text-transform: uppercase;
   text-align: center;
+}
+
+.feedback__text-field {
+  width: 100%;
+  height: 50px;
+  border: 2px solid $color-grey-light;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
 }

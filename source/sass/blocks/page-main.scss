@@ -2,10 +2,7 @@
   background-color: $color-white;
   padding: 0 20px;
 }
+
 .visually-hidden {
   display: none;
-}
-.page-main__h1 {
-  @include font-param(24px, lighter, normal );
-  text-align: center;
 }

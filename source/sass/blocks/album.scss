@@ -1,6 +1,11 @@
-.album__title{
+.album__item {
+  margin-bottom: 20px;
+}
+
+.album__title {
   @include font-param(14px, lighter, 30px);
   text-align: center;
+  padding: 50px 0;
 }
 
 .album__name {
@@ -12,12 +17,38 @@
   text-transform: uppercase;
 }
 
+.album__author {
+  margin: 0;
+}
+
 .album__descripton {
   @include font-param(14px, normal, 24px);
+  margin: 0;
 }
 
 .album__like {
   @include font-param(12px, normal, 24px);
   text-transform: uppercase;
   color: $color-pink;
+  margin: 0;
+}
+
+.album__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.album__img-wrapper {
+  height: 180px;
+}
+
+.album__img-wrapper--wide {
+  margin: 0 -20px;
+  height: 140px;
+}
+
+.album__item-footer {
+  background-color: $color-grey-light;
+  padding: 20px;
 }
