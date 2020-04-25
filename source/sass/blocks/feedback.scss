@@ -86,14 +86,14 @@
   position: relative;
 }
 
-[type='checkbox']:checked + .feedback__checkbox:before {
-  content: '';
+[type="checkbox"]:checked + .feedback__checkbox::before {
+  content: "";
   position: absolute;
   display: block;
   width: 35px;
   height: 35px;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   background-color: red;
 }
 
@@ -109,8 +109,8 @@
   border-radius: 50%;
 }
 
-[type='radio']:checked + .feedback__radio:before {
-  content: '';
+[type="radio"]:checked + .feedback__radio::before {
+  content: "";
   position: absolute;
   display: block;
   width: 17px;

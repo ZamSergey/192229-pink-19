@@ -15,7 +15,7 @@
   margin-bottom: 27px;
 }
 
-.tools__check--contrast{
+.tools__check--contrast {
   background: url("/img/icon-editor-contrast.svg") no-repeat center bottom;
   margin-right: 0;
 }
@@ -28,17 +28,17 @@
   background: url("/img/icon-editor-crop.svg") no-repeat center bottom;
 }
 
-input[type=range] {
+input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;
 }
 
-input[type=range]:focus {
+input[type="range"]:focus {
   outline: none;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
