@@ -1,8 +1,35 @@
 .page-main {
+  background: url("/img/iphone-hand-mobile@1x.png") no-repeat 0 175px,
+    url("/img/bg-back-mobile@1x.jpg") no-repeat center top;
   background-color: $color-white;
-  padding: 0 20px;
+  padding: 86px 0 0;
+  margin-top: -66px;
 }
 
 .visually-hidden {
   display: none;
+}
+
+.page-main__h1 {
+  @include font-param(24px, lighter, normal );
+  text-align: center;
+  color: $color-white;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.page-main__download {
+  margin-top: 310px;
+}
+
+.main-nav__wrapper {
+  position: relative;
+}
+
+.page-main__album {
+  margin-top: 86px;
+}
+
+.page-main__feedback{
+  margin-top: 53px;
 }

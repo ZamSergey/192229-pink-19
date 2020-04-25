@@ -1,0 +1,23 @@
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius:  50%;
+  background-color: $color-grey;
+  margin-right: 12px;
+}
+
+.slider__toggle:last-of-type {
+  margin-right: 0;
+}
+
+.slider__toggle--active {
+  border: 3px solid $color-darkblue;
+  background-color: transparent;
+}

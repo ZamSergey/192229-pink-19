@@ -12,6 +12,10 @@
   margin-bottom: 10px;
 }
 
+.button:last-child {
+  margin-bottom: 0;
+}
+
 .button--cancel {
   color: $color-grey-lighter;
   border-color: $color-grey-lighter;

@@ -1,5 +1,13 @@
 .img-sender__img-input {
   display: block;
+  margin-bottom: 40px;
+  width: 280px;
+  height: 375px;
+  background-image: url("https://via.placeholder.com/280x375");
+}
+
+.img-sender__img-input input {
+  display: none;
 }
 
 .img-sender__tools {

@@ -1,6 +1,10 @@
+.prises__wrapper{
+  overflow: scroll;
+  margin: 0 -20px;
+}
+
 .prises {
   background-color: $color-grey-light;
-  margin: 0 -20px;
   padding: 60px 20px 20px;
 }
 
@@ -14,4 +18,54 @@
   @include font-param(24px, lighter, 30px);
   text-align: center;
   margin: 0;
+}
+
+.prises__head-item {
+  width: 280px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid $color-form-border;
+}
+
+.prises__feature-list {
+  display: flex;
+}
+
+.prises__header {
+  display: flex;
+  background-color: $color-darkblue;
+  color: $color-white;
+  box-sizing: border-box;
+}
+
+.prises__header :first-child {
+  border-left: none;
+}
+
+.prises__feature-item {
+  width: 280px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $color-form-border;
+  background-color: $color-white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.prises__feature-list :first-child {
+  border-left: none;
+}
+
+.prises__feature--yes {
+  display: block;
+  width: 23px;
+  height: 20px;
+  background: url("/img/icon-yes.svg") no-repeat center center;
+}
+
+.prises__toggles {
+  margin: 40px 0 40px;
 }

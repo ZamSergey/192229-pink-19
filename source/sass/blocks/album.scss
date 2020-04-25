@@ -1,3 +1,7 @@
+.album {
+  background-color: $color-white;
+}
+
 .album__item {
   margin-bottom: 20px;
 }
@@ -35,7 +39,7 @@
 
 .album__list {
   list-style: none;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 }
 

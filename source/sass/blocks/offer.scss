@@ -1,9 +1,5 @@
 .offer {
-  background-color: $color-white;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  margin: 0 -20px;
+  background: $color-white;
   padding: 45px 0 0;
 }
 
@@ -15,8 +11,9 @@
 .offer__list {
   list-style: none;
   margin: 0;
-  padding: 50px 0;
-  background-color: $color-grey-light;
+  padding: 50px 0 347px;
+  background: $color-grey-light url("../../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
+  margin-bottom: -42px;
 }
 
 .offer__item {

@@ -5,11 +5,12 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__header">
           <a class="logo main-nav__logo">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -32,13 +33,12 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__h1">Взгляните на жизнь<br>
-        иначе!</h1>
-
     </header>
     <main class="page-main">
-
-    <section class="download">
+      <h1 class="page-main__h1">Взгляните на жизнь<br>
+        иначе!
+      </h1>
+    <section class="page-main__download download">
       <a class="download__button button button--white">Скачать приложение</a>
       <div class="download__devices devices-list">
         <div class="devices-list__img devices-list__img--mac">
@@ -88,9 +88,7 @@
           <h3 class="offer__title">Заводит новых друзей</h3>
           <p class="offer__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых</p>
         </li>
-        <li class="offer__item">
-          <img src="img/iphone-screen-mobile@1x.png" alt="">
-        </li>
+
       </ul>
     </section>
     <section class="reviews">
@@ -103,42 +101,80 @@
           </div>
         </div>
         <div class="reviews__toggles slider__toggles">
-          <button class="reviews__toggle slider__toggle" type="button">1</button>
-          <button class="reviews__toggle slider__toggle" type="button">2</button>
-          <button class="reviews__toggle slider__toggle" type="button">3</button>
+          <span class="reviews__toggle slider__toggle"></span>
+          <span class="reviews__toggle slider__toggle slider__toggle--active"></span>
+          <span class="reviews__toggle slider__toggle"></span>
         </div>
       </div>
     </section>
     <section class="prises">
       <div class="prises__wrapper slider">
         <h2 class="visually-hidden">Прайс лист</h2>
-        <div class="prises__list slider__list">
-          <div class="prises__item slider__item">
-            <header class="prises__header">
+        <table class="prises__list">
+          <tr class="prises__header">
+            <th class="prises__head-item">
               <p class="prises__title">Стандарт</p>
               <p class="prises__prise">3,99 USD</p>
-              <p class="prises__hot-mark">Хит</p>
-            </header>
-            <div class="prises__body feature-list">
-              <p class="feature-list__item">
-                <span class="feature-list__title">Розовый фильтр</span>
-                <span class="feature-list__existence feature-list__existence--yes"></span>
-              </p>
-              <p class="feature-list__item">
-                <span class="feature-list__title">Смайлики</span>
-                <span class="feature-list__existence feature-list__existence--yes"></span>
-              </p>
-              <p class="feature-list__item">
-                <span class="feature-list__title">Комментарии</span>
-                <span class="feature-list__existence feature-list__existence--no"></span>
-              </p>
-            </div>
-          </div>
-        </div>
+              <p class="prises__hot-mark visually-hidden">Хит</p>
+            </th>
+            <th class="prises__head-item">
+              <p class="prises__title">Стандарт</p>
+              <p class="prises__prise">3,99 USD</p>
+              <p class="prises__hot-mark visually-hidden">Хит</p>
+            </th>
+            <th class="prises__head-item">
+              <p class="prises__title">Стандарт</p>
+              <p class="prises__prise">3,99 USD</p>
+              <p class="prises__hot-mark visually-hidden">Хит</p>
+            </th>
+          </tr>
+          <tr class="prises__feature-list">
+            <td class="prises__feature-item">
+              <span class="prises__feature">Розовый фильтр</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Розовый фильтр</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Розовый фильтр</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+          </tr>
+          <tr class="prises__feature-list">
+            <td class="prises__feature-item">
+              <span class="prises__feature">Смайлики</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Смайлики</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Смайлики</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+          </tr>
+          <tr class="prises__feature-list">
+            <td class="prises__feature-item">
+              <span class="prises__feature">Комментарии</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Комментарии</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+            <td class="prises__feature-item">
+              <span class="prises__feature">Комментарии</span>
+              <span class="prises__feature prises__feature--yes"></span>
+            </td>
+          </tr>
+        </table>
         <div class="prises__toggles slider__toggles">
-          <button class="prises__toggle slider__toggle" type="button">1</button>
-          <button class="prises__toggle slider__toggle" type="button">2</button>
-          <button class="prises__toggle slider__toggle" type="button">3</button>
+          <span class="prises__toggle slider__toggle slider__toggle--active"></span>
+          <span class="prises__toggle slider__toggle"></span>
+          <span class="prises__toggle slider__toggle"></span>
         </div>
       </div>
     </section>
@@ -160,5 +196,21 @@
       </div>
     </section>
   </main>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
