@@ -1,13 +1,17 @@
 .send-photo {
   background-color: $color-white;
+  padding: 40px 0 0;
 }
 
-.img-sender__title {
-  padding: 50px 0;
+.send-photo__title {
   text-align: center;
+  margin: 0 0 50px;
 }
 
 .send-photo__form {
+  margin: 0;
+}
+
+.send-photo__form-wrapper {
   background-color: $color-grey-light;
-  padding: 20px 20px 40px;
 }

@@ -1,17 +1,14 @@
 .social-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+}
+
+.social-list > :not(:last-child) {
+  margin-right: 12px;
 }
 
 .social-list__item {
   width: 45px;
   height: 45px;
-  margin-right: 12px;
-}
-
-.social-list__item:last-of-type {
-  margin-right: 0;
 }

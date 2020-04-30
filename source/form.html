@@ -10,9 +10,9 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav content-wrapper main-nav--closed main-nav--nojs">
         <div class="main-nav__header">
-          <a href="/index.html" class="logo main-nav__logo">
+          <a href="index.html" class="logo main-nav__logo">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
                 <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -26,145 +26,171 @@
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item "><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item site-list__item--active"><a href="#">Конкурс</a></li>
+            <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__h1">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
-      <form action="" class="page-main__feedback feedback">
-        <p class="feedback__title">
-          Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-        </p>
-        <fieldset class="feedback__fieldset feedback__fieldset--fio feedback__fieldset--white">
-          <label class="feedback__lable feedback__surname">
-            <span class="feedback__fild-title">Фамилия:</span>
-            <input class="feedback__text-field" type="text" name="feedback_surname" placeholder="Укажите фамилию *" required>
-          </label>
-          <label class="feedback__lable feedback__name">
-            <span class="feedback__fild-title">Имя:</span>
-            <input class="feedback__text-field" type="text" name="feedback_name" placeholder="Введите ваше имя *" required>
-          </label>
-          <label class="feedback__lable feedback__patronymic">
-            <span class="feedback__fild-title">Отчество:</span>
-            <input class="feedback__text-field" type="text" name="feedback_patronymic" placeholder="Ну и отчество тоже" required>
-          </label>
-        </fieldset>
-        <fieldset class="feedback__fieldset feedback__achievement-wrapper feedback__fieldset--grey">
-          <p class="feedback__fieldset-title">
-            Ваши безбашенные<br>
-            достижения в путешествии
-          </p>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_shark">
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Сделал селфи с акулой</span>
-          </label>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_beach" >
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Обгорел на пляже</span>
-          </label>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_chak">
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Видел Чака Норриса</span>
-          </label>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_gift" >
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Накупил сувениров</span>
-          </label>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_tower">
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Удержал башню</span>
-          </label>
-          <label class="feedback__lable feedback__achievement">
-            <input class="visually-hidden" type="checkbox" name="check_hotel">
-            <span class="feedback__checkbox"></span>
-            <span class="feedback__check-title">Разгромил отель</span>
-          </label>
-        </fieldset>
-        <fieldset class="feedback__fieldset feedback__fieldset--white">
-          <label class="feedback__lable feedback__surname">
-            <span class="feedback__fild-title">Номер телефона</span>
-            <input class="feedback__text-field" type="tel" name="feedback_phone" placeholder="Номер, пожалуйста ">
-          </label>
-          <label class="feedback__lable feedback__name">
-            <span class="feedback__fild-title">Адрес почты</span>
-            <input class="feedback__text-field" type="email" name="feedback_email" placeholder="Введите почту *" required>
-          </label>
-        </fieldset>
-        <fieldset class="feedback__fieldset feedback__fieldset--grey">
-          <p class="feedback__fieldset-title">
-            С каким приложением<br>
-            путешествовали?
-          </p>
-          <label class="feedback__lable feedback__devise-type">
-            <input class="visually-hidden" type="radio" name="feedback_devise_type" >
-            <span class="feedback__radio"></span>
-            <span class="feedback__check-title">Pink для iOS</span>
-          </label>
-          <label class="feedback__lable feedback__devise-type">
-            <input class="visually-hidden" type="radio" name="feedback_devise_type" >
-            <span class="feedback__radio"></span>
-            <span class="feedback__check-title">Pink на Android</span>
-          </label>
-          <label class="feedback__lable feedback__devise-type">
-            <input class="visually-hidden" type="radio" name="feedback_devise_type">
-            <span class="feedback__radio"></span>
-            <span class="feedback__check-title">Windows Phone</span>
-          </label>
-        </fieldset>
-        <fieldset class="feedback__fieldset feedback__fieldset--white">
-          <p class="feedback__fieldset-title">Опишите свои эмоции
-          </p>
-          <textarea class="feedback__feeling" name="feedback__feeling"  cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-          <button class="button button--rect" type="button">
-            Отправить форму
-          </button>
-        <p class="feedback__explanation"><span class="feeback__sup">*</span> — обязательные поля</p>
+
+        <h1 class="page-main__h1 content-wrapper">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+        <div class="page-main__plaisholder page-main__plaisholder--form"></div>
+        <div class="feedback__form-wrapper">
+          <form action="" class="page-main__feedback feedback content-wrapper">
+            <p class="feedback__title">
+              Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту!
+            </p>
+            <fieldset class="feedback__fieldset feedback__fieldset--fio feedback__fieldset--white">
+              <label class="feedback__text-label feedback__surname">
+                <span class="feedback__fild-title">Фамилия:</span>
+                <input class="feedback__text-field" type="text" name="feedback_surname" placeholder="Укажите фамилию *" required>
+              </label>
+              <label class="feedback__text-label feedback__name">
+                <span class="feedback__fild-title">Имя:</span>
+                <input class="feedback__text-field" type="text" name="feedback_name" placeholder="Введите ваше имя *" required>
+              </label>
+              <label class="feedback__text-label feedback__patronymic">
+                <span class="feedback__fild-title">Отчество:</span>
+                <input class="feedback__text-field" type="text" name="feedback_patronymic" placeholder="Ну и отчество тоже" required>
+              </label>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--achievement feedback__fieldset--grey">
+              <p class="feedback__fieldset-title">
+                Ваши безбашенные<br>
+                достижения в путешествии
+              </p>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_shark">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Сделал селфи с акулой</span>
+              </label>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_beach">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Обгорел на пляже</span>
+              </label>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_chak">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Видел Чака Норриса</span>
+              </label>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_gift">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Накупил сувениров</span>
+              </label>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_tower">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Удержал башню</span>
+              </label>
+              <label class="feedback__check-label feedback__achievement">
+                <input class="visually-hidden" type="checkbox" name="check_hotel">
+                <span class="feedback__checkbox"></span>
+                <span class="feedback__check-title">Разгромил отель</span>
+              </label>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--user-contacts feedback__fieldset--white">
+              <label class="feedback__text-label feedback__surname">
+                <span class="feedback__fild-title">Номер телефона</span>
+                <input class="feedback__text-field" type="tel" name="feedback_phone" placeholder="Номер, пожалуйста ">
+              </label>
+              <label class="feedback__text-label feedback__name">
+                <span class="feedback__fild-title">Адрес почты</span>
+                <input class="feedback__text-field" type="email" name="feedback_email" placeholder="Введите почту *" required>
+              </label>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--devise-type feedback__fieldset--grey">
+              <p class="feedback__fieldset-title">С каким приложением<br>путешествовали?
+              </p>
+              <label class="feedback__radio-label feedback__devise-type">
+                <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                <span class="feedback__radio"></span>
+                <span class="feedback__check-title">Pink для iOS</span>
+              </label>
+              <label class="feedback__radio-label feedback__devise-type">
+                <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                <span class="feedback__radio"></span>
+                <span class="feedback__check-title">Pink на Android</span>
+              </label>
+              <label class="feedback__radio-label feedback__devise-type">
+                <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                <span class="feedback__radio"></span>
+                <span class="feedback__check-title">Windows Phone</span>
+              </label>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--white">
+              <p class="feedback__fieldset-title feedback__fieldset-title--smallmarg">Опишите свои эмоции
+              </p>
+              <textarea class="feedback__feeling" name="feedback__feeling" cols="30" rows="10"
+                        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="feedback__button-wrapper">
+              <button class="button button--rect " type="button">
+                Отправить форму
+              </button>
+            </div>
+            <p class="feedback__explanation"><span class="feeback__sup">*</span> — обязательные поля</p>
 
 
-      </form>
+          </form>
+        </div>
+
     </main>
     <footer class="page-footer">
-      <a href="index.html" class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x45" alt="" class="page-footer__logo-img">
-      </a>
-      <div class="page-footer__social">
-        <ul class="page-footer__social-list social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--twitter">
-              <img src="https://via.placeholder.com/45x45" alt="">
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">
-              <img src="https://via.placeholder.com/45x45" alt="">
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--play">
-              <img src="https://via.placeholder.com/45x45" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__site-developer">
+      <div class="page-footer__wrapper content-wrapper">
+        <div class="page-footer__logo">
+          <a href="index.html" class="page-footer__logo">
+            <img src="https://via.placeholder.com/150x45" alt="" class="page-footer__logo-img">
+          </a>
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list social-list">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link--twitter">
+                <img src="https://via.placeholder.com/45x45" alt="">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link--facebook">
+                <img src="https://via.placeholder.com/45x45" alt="">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link social-list__link--play">
+                <img src="https://via.placeholder.com/45x45" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__site-developer">
 
-        <a href="https://htmlacademy.ru/" class="page-footer__developer-link">
-          <span class="page-footer__developer">Разработкано</span><img src="https://via.placeholder.com/29x37" alt="HTMLAcademy" width="29" height="37" class="page-footer__developer-img">
-        </a>
+          <a href="https://htmlacademy.ru/" class="page-footer__developer-link">
+            <span class="page-footer__developer">Разработкано</span><img src="https://via.placeholder.com/29x37" alt="HTMLAcademy" width="29" height="37" class="page-footer__developer-img">
+          </a>
+        </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

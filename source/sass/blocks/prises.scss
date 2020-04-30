@@ -1,11 +1,11 @@
 .prises__wrapper {
   overflow: scroll;
-  margin: 0 -20px;
 }
 
 .prises {
-  background-color: $color-grey-light;
-  padding: 60px 20px 20px;
+  background: url("/img/bg-triangle-white.svg") no-repeat top right,
+    $color-grey-light;
+  padding: 90px 0 45px;
 }
 
 .prises__title {
@@ -23,8 +23,8 @@
 .prises__head-item {
   width: 280px;
   box-sizing: border-box;
-  padding: 20px;
   border: 1px solid $color-form-border;
+  padding: 25px 0 22px;
 }
 
 .prises__feature-list {
@@ -48,11 +48,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   border: 1px solid $color-form-border;
   background-color: $color-white;
   text-transform: uppercase;
   font-size: 14px;
+  padding: 24px 20px 22px;
 }
 
 .prises__feature-list :first-child {
@@ -64,8 +64,4 @@
   width: 23px;
   height: 20px;
   background: url("/img/icon-yes.svg") no-repeat center center;
-}
-
-.prises__toggles {
-  margin: 40px 0 40px;
 }

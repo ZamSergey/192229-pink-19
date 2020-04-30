@@ -9,11 +9,6 @@
   height: 50px;
   text-align: center;
   background-color: transparent;
-  margin-bottom: 10px;
-}
-
-.button:last-child {
-  margin-bottom: 0;
 }
 
 .button--cancel {
@@ -24,4 +19,13 @@
 .button--white {
   color: $color-white;
   border-color: $color-white;
+}
+
+.button--rect {
+  border: 0;
+  border-radius: 2px;
+  padding: 9px 52px;
+  height: auto;
+  color: $color-white;
+  background-color: $color-button-green;
 }

@@ -1,50 +1,30 @@
 .feedback {
-  padding: 40px 20px 0;
   background-color: $color-white;
 }
 
 .feedback__fieldset {
-  border: none;
-  padding: 40px 0;
   margin: 0;
+  padding: 40px 0;
+  border: none;
   display: flex;
-}
-
-.feedback__fieldset :last-child {
-  margin-bottom: 0;
 }
 
 .feedback__fieldset--grey {
   background-color: $color-grey-light;
-  padding: 40px 20px;
-  margin: 0 -20px;
 }
 
 .feedback__fieldset--white {
   background-color: $color-white;
-  padding: 40px 20px;
-  margin: 0 -20px;
-}
-
-.feedback__lable {
-  display: block;
-  margin-bottom: 25px;
 }
 
 .feedback__achievement {
   display: flex;
-  margin-bottom: 40px;
   align-items: center;
 }
 
 .feedback__devise-type {
   display: flex;
-  margin-bottom: 35px;
   align-items: center;
-}
-
-.feedback__achievement input {
-  margin-right: 30px;
 }
 
 .feedback__title {
@@ -55,9 +35,9 @@
 
 .feedback__fild-title {
   @include font-param(14px, normal, 30px);
-  padding-left: 20px;
   color: $color-pink;
   text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .feedback__surname input,
@@ -65,6 +45,7 @@
 .feedback__patronymic input {
   @include font-param(18px, normal, 30px);
   color: $color-black;
+  padding: 14px 20px;
 }
 
 .feedback__fieldset-title {
@@ -72,7 +53,7 @@
   color: $color-pink;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0;
 }
 
 .feedback__checkbox {
@@ -82,19 +63,19 @@
   box-sizing: border-box;
   border: 2px solid $color-form-border;
   background-color: $color-white;
-  margin-right: 31px;
   position: relative;
+  margin-right: 30px;
 }
 
 [type="checkbox"]:checked + .feedback__checkbox::before {
   content: "";
   position: absolute;
+  background: url("/img/icon-yes.svg") no-repeat center center;
   display: block;
   width: 35px;
   height: 35px;
   left: 0;
   bottom: 0;
-  background-color: red;
 }
 
 .feedback__radio {
@@ -104,9 +85,9 @@
   box-sizing: border-box;
   border: 2px solid $color-form-border;
   background-color: $color-white;
-  margin-right: 31px;
   position: relative;
   border-radius: 50%;
+  margin-right: 30px;
 }
 
 [type="radio"]:checked + .feedback__radio::before {
@@ -133,21 +114,50 @@
   @include font-param(14px, normal, 30px);
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .feedback__text-field {
   width: 100%;
-  height: 50px;
+
   border: 2px solid $color-grey-light;
-  padding-left: 20px;
-  margin-bottom: 25px;
   box-sizing: border-box;
 }
 
 .feedback__feeling {
+  @include font-param(18px, normal, 30px);
   width: 100%;
   height: 200px;
   box-sizing: border-box;
   resize: none;
-  padding: 23px;
+  padding: 20px;
+  color: black;
+}
+
+.feedback__fieldset--achievement .feedback__fieldset-title {
+  margin-bottom: 40px;
+}
+
+.feedback__fieldset--devise-type .feedback__fieldset-title {
+  margin-bottom: 40px;
+}
+
+.feedback__fieldset .feedback__text-label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.feedback__fieldset .feedback__check-label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.feedback__fieldset .feedback__devise-type:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.feedback__fieldset-title--smallmarg {
+  margin-bottom: 20px;
+}
+
+.feedback__button-wrapper {
+  padding-bottom: 40px;
 }

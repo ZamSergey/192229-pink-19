@@ -1,10 +1,15 @@
 .download {
-  padding: 20px 0;
   background-color: $color-darkblue;
+  padding-top: 28px;
+  padding-bottom: 36px;
+}
+
+.download :last-child {
+  margin-bottom: 0;
 }
 
 .download__button {
-  margin: 0 auto 20px;
+  margin: 0 auto 32px;
 }
 
 .download__devices {
@@ -15,4 +20,5 @@
   @include font-param(14px, lighter, 24px);
   text-align: center;
   color: $color-white;
+  margin: 0;
 }

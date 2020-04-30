@@ -1,19 +1,20 @@
 .offer {
   background: $color-white;
-  padding: 45px 0 0;
+  padding-top: 45px;
 }
 
 .offer__description {
   @include font-param(14px, lighter, 24px);
   text-align: center;
+  margin: 0;
 }
 
 .offer__list {
   list-style: none;
+  background: url("/img/bg-triangle-white.svg") no-repeat top right,
+    $color-grey-light;
   margin: 0;
-  padding: 50px 0 347px;
-  background: $color-grey-light url("../../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
-  margin-bottom: -42px;
+  padding: 86px 0 0;
 }
 
 .offer__item {
@@ -21,12 +22,16 @@
   margin-bottom: 40px;
 }
 
-.offer__item:last-of-type {
-  margin-bottom: 0;
+.offer__list :last-child {
+  margin: 0;
 }
 
 .offer__header {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+}
+
+.offer__header :last-child {
+  margin-bottom: 0;
 }
 
 .offer__prev-text {
@@ -38,4 +43,13 @@
 .offer__title {
   @include font-param(18px, bold, 24px);
   margin: 0;
+}
+
+.offer__placeholder {
+  background: $color-grey-light url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 280px;
 }
