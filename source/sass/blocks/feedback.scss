@@ -30,7 +30,7 @@
 .feedback__title {
   @include font-param(14px, normal, 30px);
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .feedback__fild-title {
@@ -142,7 +142,11 @@
   margin-bottom: 40px;
 }
 
-.feedback__fieldset .feedback__text-label:not(:last-child) {
+.feedback__text-label {
+  display: block;
+}
+
+.feedback__text-label:not(:last-child) {
   margin-bottom: 20px;
 }
 

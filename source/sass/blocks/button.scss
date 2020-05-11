@@ -9,6 +9,7 @@
   height: 50px;
   text-align: center;
   background-color: transparent;
+  box-sizing: border-box;
 }
 
 .button--cancel {
@@ -28,4 +29,13 @@
   height: auto;
   color: $color-white;
   background-color: $color-button-green;
+}
+
+@media (min-width: 960px) {
+  .button {
+    font-size: 21px;
+    line-height: 50px;
+    height: 56px;
+    width: 300px;
+  }
 }

@@ -10,8 +10,8 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav content-wrapper main-nav--closed main-nav--nojs">
-        <div class="main-nav__header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="content-wrapper main-nav__wrapper">
           <a href="index.html" class="logo main-nav__logo">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
@@ -23,8 +23,6 @@
             </svg>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать меню</span></button>
-        </div>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
@@ -35,22 +33,23 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__h1 content-wrapper">
-        Фотографии пользователей
-      </h1>
-      <div class="page-main__plaisholder page-main__plaisholder--photo"></div>
+      <div class="page-main__plaisholder page-main__plaisholder--photo">
+        <h1 class="page-main__h1 content-wrapper">
+          Фотографии пользователей
+        </h1>
+      </div>
       <section class="page-main__album album">
-        <div class="content-wrapper">
-          <h2 class="visually-hidden">Фотографии пользователей</h2>
-          <p class="album__title"> Взгляните на фотографии, которые выкладывают пользователи!
+
+
+          <p class="album__title content-wrapper"> Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
           </p>
-          <ul class="album__list">
-            <li class="album__item">
-              <div class="album__img-wrapper album__img-wrapper--wide wide-block">
-                <img src="https://via.placeholder.com/320x140" alt="" class="album__item-img">
-                <span class="album__mark album__mark--hidden"></span>
-              </div>
+          <div class="album__item album__panorame">
+            <div class="album__img-wrapper album__img-wrapper--wide">
+              <img src="https://via.placeholder.com/320x140" alt="" class="album__item-img">
+              <span class="album__mark album__mark--hidden"></span>
+            </div>
+            <div class="content-wrapper">
               <div class="album__item-footer">
                 <p class="album__author">
                   <span class="album__name">Анна</span>
@@ -62,7 +61,10 @@
                   Нравится:
                 </p>
               </div>
-            </li>
+            </div>
+          </div>
+        <div class="content-wrapper">
+          <ul class="album__list">
             <li class="album__item">
               <div class="album__img-wrapper">
                 <img src="https://via.placeholder.com/280x180" alt="" class="album__item-img">
@@ -163,35 +165,49 @@
         </div>
       </section>
       <section class="send-photo">
-        <div class="content-wrapper">
-          <h2 class="visually-hidden">Форма для отправки фотографий</h2>
-          <p class="send-photo__title">Затмите их всех!<br>
-            Выкладывайте все, что накопилось в<br> телефоне!</p>
-          <div class="send-photo__form-wrapper wide-block">
+        <h2 class="visually-hidden">Форма для отправки фотографий</h2>
+        <p class="send-photo__title content-wrapper">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в<br> телефоне!</p>
+        <div class="content_wrapper">
+          <div class="send-photo__form-wrapper">
             <form action="https://echo.htmlacademy.ru" class="send-photo__form  img-sender">
               <label class="img-sender__img-input">
                 <input type="file" name="user_photo" multiple>
               </label>
               <div class="img-sender__tools tools">
-                <label class="tools__check tools__check--crop">
-                  <input type="radio" name="tools" id="crop">
-                </label>
-                <label class="tools__check tools__check--blur">
-                  <input type="radio" name="tools" id="blur">
-                </label>
-                <label class="tools__check tools__check--contrast">
-                  <input type="radio" name="tools" id="contrast">
-                </label>
+                <input class="tools__check tools__check--crop" type="radio" name="tools" id="crop" checked>
+                <input class="tools__check tools__check--blur" type="radio" name="tools" id="blur">
+                <input class="tools__check tools__check--contrast" type="radio" name="tools" id="contrast">
 
-                <label class="tools__slider">
-                  <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
-                </label>
-                <hr class="img-sender__separator">
-                <div class="img-sender__button-wrapper">
-                  <button class="img-sender__button button button--oval">Запостить</button>
-                  <button class="img-sender__button button button--oval button--cancel">Отмена</button>
+                <div class="tools__group-wrapper">
+                  <label for="crop" class="tools__check tools__check--crop">
+                  </label>
+                  <label class="tools__slider tools__slider-crop">
+                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                  </label>
                 </div>
+                <div class="tools__group-wrapper">
+                  <label for="blur" class="tools__check tools__check--blur">
+
+                  </label>
+                  <label class="tools__slider tools__slider-blur">
+                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                  </label>
                 </div>
+                <div class="tools__group-wrapper">
+                  <label for="contrast" class="tools__check tools__check--contrast">
+
+                  </label>
+                  <label class="tools__slider tools__slider-contrast">
+                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                  </label>
+                </div>
+              </div>
+              <hr class="img-sender__separator">
+              <div class="img-sender__button-wrapper">
+                <button class="img-sender__button button button--oval">Запостить</button>
+                <button class="img-sender__button button button--oval button--cancel">Отмена</button>
+              </div>
             </form>
           </div>
         </div>

@@ -5,7 +5,7 @@
 
 .send-photo__title {
   text-align: center;
-  margin: 0 0 50px;
+  margin-bottom: 50px;
 }
 
 .send-photo__form {
@@ -13,5 +13,6 @@
 }
 
 .send-photo__form-wrapper {
+  padding: 20px 0 40px;
   background-color: $color-grey-light;
 }

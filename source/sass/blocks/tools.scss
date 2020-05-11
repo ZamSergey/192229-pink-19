@@ -1,15 +1,32 @@
 .tools__check {
+  display: block;
   width: 45px;
   height: 45px;
 }
 
-.tools__check input {
+.tools__slider {
+  position: absolute;
+  text-align: center;
+  width: 280px;
+  left: 0;
   display: none;
 }
 
-.tools__slider {
-  text-align: center;
-  flex-basis: 100%;
+.tools__check input,
+.tools__check[type="radio"] {
+  display: none;
+}
+
+.tools__check--crop:checked ~ * [for="crop"],
+.tools__check--blur:checked ~ * [for="blur"],
+.tools__check--contrast:checked ~ * [for="contrast"] {
+  background-color: red;
+}
+
+.tools__check--crop:checked ~ * .tools__slider-crop,
+.tools__check--blur:checked ~ * .tools__slider-blur,
+.tools__check--contrast:checked ~ * .tools__slider-contrast {
+  display: block;
 }
 
 .tools__check--contrast {

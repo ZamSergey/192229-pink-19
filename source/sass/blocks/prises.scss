@@ -15,7 +15,7 @@
 }
 
 .prises__prise {
-  @include font-param(24px, lighter, 30px);
+  @include font-param(24px, 100, 30px);
   text-align: center;
   margin: 0;
 }

@@ -1,5 +1,4 @@
 .download {
-  background-color: $color-darkblue;
   padding-top: 28px;
   padding-bottom: 36px;
 }
@@ -17,8 +16,29 @@
 }
 
 .download__description {
-  @include font-param(14px, lighter, 24px);
+  @include font-param(14px, 100, 24px);
   text-align: center;
   color: $color-white;
   margin: 0;
+}
+
+@media (min-width: 660px) {
+  .download__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .download {
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .download__button {
+    margin-bottom: 62px;
+  }
+
+  .download__devices {
+    margin-bottom: 50px;
+  }
 }
