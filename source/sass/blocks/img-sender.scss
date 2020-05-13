@@ -1,16 +1,41 @@
 .img-sender__img-input {
   display: block;
+  width: 280px;
+  height: 375px;
+  margin: 0 auto;
+  background-image: url("https://via.placeholder.com/280x375");
+}
+
+.img-sender__img-input input {
+  display: none;
 }
 
 .img-sender__tools {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 40px 0 0;
 }
 
 .img-sender__separator {
-  margin: 0 -20px 38px;
   display: block;
   height: 1px;
-  width: 150%;
+}
+
+.img-sender__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.img-sender__button-wrapper :last-child {
+  margin-bottom: 0;
+}
+
+.img-sender__button {
+  margin-bottom: 12px;
 }

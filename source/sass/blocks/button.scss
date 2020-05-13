@@ -9,7 +9,7 @@
   height: 50px;
   text-align: center;
   background-color: transparent;
-  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .button--cancel {
@@ -20,4 +20,22 @@
 .button--white {
   color: $color-white;
   border-color: $color-white;
+}
+
+.button--rect {
+  border: 0;
+  border-radius: 2px;
+  padding: 9px 52px;
+  height: auto;
+  color: $color-white;
+  background-color: $color-button-green;
+}
+
+@media (min-width: 960px) {
+  .button {
+    font-size: 21px;
+    line-height: 50px;
+    height: 56px;
+    width: 300px;
+  }
 }

@@ -1,39 +1,53 @@
 .offer {
-  background-color: $color-white;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  margin: 0 -20px;
-  padding: 45px 0 0;
+  background: $color-white;
+  padding-top: 45px;
 }
 
 .offer__description {
-  @include font-param(14px, lighter, 24px);
+  @include font-param(14px, 100, 24px);
   text-align: center;
+  margin: 0;
 }
 
 .offer__list {
   list-style: none;
+  background: url("/img/bg-triangle-white.svg") no-repeat top right,
+    $color-grey-light;
   margin: 0;
-  padding: 50px 0;
-  background-color: $color-grey-light;
+  padding: 86px 0 0;
+}
+
+.offer__list--list24 {
+  display: none;
 }
 
 .offer__item {
   text-align: center;
+  margin: 0;
+}
+
+.offer__list .offer__item:first-child {
   margin-bottom: 40px;
 }
 
-.offer__item:last-of-type {
+.offer__item .offer__text-item {
+  margin-bottom: 40px;
+}
+
+.offer__item .offer__text-item:last-child {
   margin-bottom: 0;
 }
 
 .offer__header {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+}
+
+.offer__header :last-child {
+  margin-bottom: 0;
 }
 
 .offer__prev-text {
-  @include font-param(24px, lighter);
+  @include font-param(24px, 100);
   text-align: center;
   margin: 0 0 40px;
 }
@@ -41,4 +55,81 @@
 .offer__title {
   @include font-param(18px, bold, 24px);
   margin: 0;
+  margin-bottom: 20px;
+}
+
+.offer__placeholder {
+  background: $color-grey-light url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 280px;
+}
+
+.offer__effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .offer {
+    padding-bottom: 40px;
+  }
+
+  .offer__item-wrapper {
+    display: flex;
+  }
+
+  .offer__item {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  .offer__description {
+    text-align: left;
+  }
+
+  .offer__list .offer__item:first-child {
+    margin-bottom: 40px;
+  }
+
+  .offer__item--second-block {
+    order: -1;
+  }
+
+  .offer__placeholder {
+    background: $color-grey-light url("../../img/iphone-screen-3-tablet@1x.png") no-repeat center top;
+    width: 270px;
+    height: 100%;
+  }
+
+  .offer__effect {
+    padding-top: 60px;
+    display: block;
+  }
+
+  .offer__effect-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offer__text-item--efect24,
+  .offer__img-item {
+    flex-basis: 50%;
+  }
+
+  .offer__title--effect24 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .offer__description--effect24,
+  .offer__link {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .offer__description--effect24 {
+    margin-bottom: 10px;
+  }
 }

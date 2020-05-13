@@ -1,13 +1,16 @@
 .reviews {
+  padding: 50px 0 40px;
   background-color: $color-white;
 }
 
 .reviews__user {
   @include font-param(18px, bold, 30px);
   text-align: center;
+  margin: 0 0 30px;
 }
 
 .reviews__text {
   @include font-param(14px, normal, 30px);
   text-align: center;
+  margin: 0 0 40px;
 }

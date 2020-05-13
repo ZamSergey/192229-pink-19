@@ -1,7 +1,11 @@
+.prises__wrapper {
+  overflow: scroll;
+}
+
 .prises {
-  background-color: $color-grey-light;
-  margin: 0 -20px;
-  padding: 60px 20px 20px;
+  background: url("/img/bg-triangle-white.svg") no-repeat top right,
+    $color-grey-light;
+  padding: 90px 0 45px;
 }
 
 .prises__title {
@@ -11,7 +15,53 @@
 }
 
 .prises__prise {
-  @include font-param(24px, lighter, 30px);
+  @include font-param(24px, 100, 30px);
   text-align: center;
   margin: 0;
+}
+
+.prises__head-item {
+  width: 280px;
+  box-sizing: border-box;
+  border: 1px solid $color-form-border;
+  padding: 25px 0 22px;
+}
+
+.prises__feature-list {
+  display: flex;
+}
+
+.prises__header {
+  display: flex;
+  background-color: $color-darkblue;
+  color: $color-white;
+  box-sizing: border-box;
+}
+
+.prises__header :first-child {
+  border-left: none;
+}
+
+.prises__feature-item {
+  width: 280px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $color-form-border;
+  background-color: $color-white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 24px 20px 22px;
+}
+
+.prises__feature-list :first-child {
+  border-left: none;
+}
+
+.prises__feature--yes {
+  display: block;
+  width: 23px;
+  height: 20px;
+  background: url("/img/icon-yes.svg") no-repeat center center;
 }
