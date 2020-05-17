@@ -44,12 +44,14 @@
           <p class="album__title content-wrapper"> Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
           </p>
-          <div class="album__item album__panorame">
-            <div class="album__img-wrapper album__img-wrapper--wide">
-              <img src="https://via.placeholder.com/320x140" alt="" class="album__item-img">
-              <span class="album__mark album__mark--hidden"></span>
-            </div>
-            <div class="content-wrapper">
+
+        <div class="content-wrapper">
+          <ul class="album__list">
+            <li class="album__item album__panorame">
+              <div class="album__img-wrapper album__img-wrapper--wide full-width">
+                <img src="https://via.placeholder.com/320x140" alt="" class="album__item-img">
+                <span class="album__mark album__mark--hidden"></span>
+              </div>
               <div class="album__item-footer">
                 <p class="album__author">
                   <span class="album__name">Анна</span>
@@ -61,10 +63,7 @@
                   Нравится:
                 </p>
               </div>
-            </div>
-          </div>
-        <div class="content-wrapper">
-          <ul class="album__list">
+            </li>
             <li class="album__item">
               <div class="album__img-wrapper">
                 <img src="https://via.placeholder.com/280x180" alt="" class="album__item-img">
@@ -168,45 +167,49 @@
         <h2 class="visually-hidden">Форма для отправки фотографий</h2>
         <p class="send-photo__title content-wrapper">Затмите их всех!<br>
           Выкладывайте все, что накопилось в<br> телефоне!</p>
-        <div class="content_wrapper">
-          <div class="send-photo__form-wrapper">
+        <div class="send-photo__form-wrapper">
+          <div class="content-wrapper">
             <form action="https://echo.htmlacademy.ru" class="send-photo__form  img-sender">
-              <label class="img-sender__img-input">
-                <input type="file" name="user_photo" multiple>
-              </label>
-              <div class="img-sender__tools tools">
-                <input class="tools__check tools__check--crop" type="radio" name="tools" id="crop" checked>
-                <input class="tools__check tools__check--blur" type="radio" name="tools" id="blur">
-                <input class="tools__check tools__check--contrast" type="radio" name="tools" id="contrast">
-
-                <div class="tools__group-wrapper">
-                  <label for="crop" class="tools__check tools__check--crop">
-                  </label>
-                  <label class="tools__slider tools__slider-crop">
-                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
-                  </label>
-                </div>
-                <div class="tools__group-wrapper">
-                  <label for="blur" class="tools__check tools__check--blur">
-
-                  </label>
-                  <label class="tools__slider tools__slider-blur">
-                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
-                  </label>
-                </div>
-                <div class="tools__group-wrapper">
-                  <label for="contrast" class="tools__check tools__check--contrast">
-
-                  </label>
-                  <label class="tools__slider tools__slider-contrast">
-                    <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
-                  </label>
-                </div>
+              <div class="img-sender__wrapper">
+                <label class="img-sender__img-input">
+                  <input type="file" name="user_photo" multiple>
+                </label>
               </div>
-              <hr class="img-sender__separator">
-              <div class="img-sender__button-wrapper">
-                <button class="img-sender__button button button--oval">Запостить</button>
-                <button class="img-sender__button button button--oval button--cancel">Отмена</button>
+              <div class="tools">
+                <div class="img-sender__tools tools__wrapper">
+                  <input class="tools__check tools__check--crop" type="radio" name="tools" id="crop" checked>
+                  <input class="tools__check tools__check--blur" type="radio" name="tools" id="blur">
+                  <input class="tools__check tools__check--contrast" type="radio" name="tools" id="contrast">
+
+                  <div class="tools__group-wrapper">
+                    <label for="crop" class="tools__check tools__check--crop">
+                    </label>
+                    <label class="tools__slider tools__slider-crop">
+                      <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                    </label>
+                  </div>
+                  <div class="tools__group-wrapper">
+                    <label for="blur" class="tools__check tools__check--blur">
+
+                    </label>
+                    <label class="tools__slider tools__slider-blur">
+                      <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                    </label>
+                  </div>
+                  <div class="tools__group-wrapper">
+                    <label for="contrast" class="tools__check tools__check--contrast">
+
+                    </label>
+                    <label class="tools__slider tools__slider-contrast">
+                      <input type="range" name="cowbell" min="0" max="100" value="90" step="10">
+                    </label>
+                  </div>
+                </div>
+                <hr class="img-sender__separator">
+                <div class="img-sender__button-wrapper">
+                  <button class="img-sender__button button button--oval">Запостить</button>
+                  <button class="img-sender__button button button--oval button--cancel">Отмена</button>
+                </div>
               </div>
             </form>
           </div>

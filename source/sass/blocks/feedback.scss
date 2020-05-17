@@ -4,17 +4,35 @@
 
 .feedback__fieldset {
   margin: 0;
-  padding: 40px 0;
   border: none;
-  display: flex;
+  padding: 0;
 }
 
-.feedback__fieldset--grey {
-  background-color: $color-grey-light;
-}
-
-.feedback__fieldset--white {
+.feedback__fieldset--fio,
+.feedback__fieldset--user-contacts,
+.feedback__fieldset--user-feedback {
   background-color: $color-white;
+}
+
+.feedback__fieldset--fio {
+  padding-bottom: 40px;
+}
+
+.feedback__fieldset--achievement,
+.feedback__fieldset--user-contacts,
+.feedback__fieldset--devise-type,
+.feedback__fieldset--user-feedback {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.feedback__fieldset--user-contacts .feedback__fieldset-title {
+  display: none;
+}
+
+.feedback__fieldset--achievement,
+.feedback__fieldset--devise-type {
+  background-color: $color-grey-light;
 }
 
 .feedback__achievement {
@@ -30,7 +48,7 @@
 .feedback__title {
   @include font-param(14px, normal, 30px);
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .feedback__fild-title {
@@ -42,7 +60,9 @@
 
 .feedback__surname input,
 .feedback__name input,
-.feedback__patronymic input {
+.feedback__patronymic input,
+.feedback__phone input,
+.feedback__email input, {
   @include font-param(18px, normal, 30px);
   color: $color-black;
   padding: 14px 20px;
@@ -53,7 +73,7 @@
   color: $color-pink;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 0 40px;
 }
 
 .feedback__checkbox {
@@ -70,7 +90,7 @@
 [type="checkbox"]:checked + .feedback__checkbox::before {
   content: "";
   position: absolute;
-  background: url("/img/icon-yes.svg") no-repeat center center;
+  background: url("../img/icon-yes.svg") no-repeat center center;
   display: block;
   width: 35px;
   height: 35px;
@@ -138,10 +158,6 @@
   margin-bottom: 40px;
 }
 
-.feedback__fieldset--devise-type .feedback__fieldset-title {
-  margin-bottom: 40px;
-}
-
 .feedback__text-label {
   display: block;
 }
@@ -151,7 +167,7 @@
 }
 
 .feedback__fieldset .feedback__check-label:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .feedback__fieldset .feedback__devise-type:not(:last-child) {
@@ -162,6 +178,219 @@
   margin-bottom: 20px;
 }
 
-.feedback__button-wrapper {
-  padding-bottom: 40px;
+.feedback__send-dutton {
+  margin-bottom: 40px;
+}
+
+.feedback__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .feedback__footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feedback__send-dutton {
+    margin-bottom: 0;
+  }
+
+  .feedback__fieldset-wrapper--wrapper {
+    background: $color-white;
+    display: inline-block;
+    padding: 0 24px;
+  }
+
+  .feedback__fieldset {
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 660px;
+  }
+
+  .feedback__fieldset .content-wrapper {
+    width: auto;
+    padding: 0;
+  }
+
+  .feedback__title,
+  .feedback__fieldset {
+    margin-bottom: 65px;
+  }
+
+  .feedback__fieldset--user-contacts .feedback__fieldset-title {
+    display: block;
+  }
+
+  .feedback__fieldset-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__fieldset--fio {
+    order: 1;
+  }
+
+  .feedback__fieldset--achievement {
+    order: 4;
+    background-color: $color-white;
+  }
+
+  .feedback__fieldset--user-contacts {
+    order: 3;
+  }
+
+  .feedback__fieldset--devise-type {
+    order: 2;
+    background-color: $color-white;
+    padding: 0 20px;
+  }
+
+  .feedback__fieldset--user-feedback {
+    order: 5;
+  }
+
+  .feedback__fieldset-title br {
+    display: none;
+  }
+
+  .feedback__title {
+    font-size: 18px;
+  }
+
+  .feedback__surname,
+  .feedback__name,
+  .feedback__patronymic {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback__surname .feedback__fild-title,
+  .feedback__name .feedback__fild-title,
+  .feedback__patronymic .feedback__fild-title {
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .feedback__fieldset > .feeldset_wrapper {
+    border: 1px solid $color-form-border;
+  }
+
+  .feeldset_wrapper {
+    position: relative;
+  }
+
+  .feedback__fieldset-title {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .feedback__fieldset--devise-type .feeldset_wrapper {
+    padding: 50px 58px;
+  }
+
+  .feedback__fieldset--user-contacts .feeldset_wrapper {
+    padding: 45px 58px;
+  }
+
+  .feedback__fieldset--achievement .feeldset_wrapper {
+    padding: 50px 58px;
+  }
+
+  .feedback__fieldset--user-feedback .feeldset_wrapper {
+    padding: 45px 58px;
+  }
+
+  .feedback__fieldset--fio .feeldset_wrapper {
+    border: none;
+  }
+
+  .feedback__email,
+  .feedback__phone {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .feedback__email .feedback__text-field,
+  .feedback__phone .feedback__text-field {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback__fieldset-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback__fieldset--fio {
+    flex-basis: 50%;
+  }
+
+  .feedback__fieldset--achievement {
+    flex-basis: 100%;
+  }
+
+  .feedback__fieldset--user-contacts {
+    flex-basis: 100%;
+  }
+
+  .feedback__fieldset--devise-type {
+    flex-basis: 50%;
+  }
+
+  .feedback__fieldset--user-feedback {
+    flex-basis: 100%;
+  }
+
+  .feedback__fieldset .feedback__check-label {
+    margin-bottom: 40px;
+  }
+
+  .feedback__fieldset--achievement .feeldset_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__checkbox {
+    margin-right: 20px;
+  }
+
+  .feedback__achievement--shark {
+    order: 1;
+    flex-basis: 260px;
+  }
+
+  .feedback__achievement--hotel {
+    order: 6;
+    flex-basis: 210px;
+  }
+
+  .feedback__achievement--tower {
+    order: 3;
+    flex-basis: 210px;
+  }
+
+  .feedback__achievement--gift {
+    order: 5;
+    flex-basis: 245px;
+  }
+
+  .feedback__achievement--chuck {
+    order: 2;
+    flex-basis: 245px;
+  }
+
+  .feedback__achievement--beech {
+    order: 4;
+    flex-basis: 260px;
+  }
 }

@@ -31,13 +31,13 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .site-list {
     top: 110px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop) {
   .main-nav--closed .site-list {
     display: flex;
   }
@@ -55,6 +55,11 @@
 
   .site-list__item {
     background: none;
+    border: none;
+  }
+
+  .site-list__item:last-of-type {
+    border: none;
   }
 
   .site-list__item a {

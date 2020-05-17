@@ -30,19 +30,23 @@
 }
 
 .tools__check--contrast {
-  background: url("/img/icon-editor-contrast.svg") no-repeat center bottom;
+  background: url("../img/icon-editor-contrast.svg") no-repeat center bottom;
+  background-size: cover;
 }
 
 .tools__check--blur {
-  background: url("/img/icon-editor-fill.svg") no-repeat center bottom;
+
+  background: url("../img/icon-editor-fill.svg") no-repeat center bottom;
+  background-size: cover;
 }
 
 .tools__check--crop {
-  background: url("/img/icon-editor-crop.svg") no-repeat center bottom;
+  background: url("../img/icon-editor-crop.svg") no-repeat center bottom;
+  background-size: cover;
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
+  -webkit-appearance: none;/* stylelint-disable-line */
   margin-top: -21px;
   width: 100%;
 }
@@ -59,18 +63,18 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: $color-darkblue;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {/* stylelint-disable-line */
   border: 2px solid $color-pink;
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
-  -webkit-appearance: none;
+  -webkit-appearance: none;/* stylelint-disable-line */
   margin-top: -5px;
 }
 
-input[type="range"]:focus::-webkit-slider-runnable-track {
+input[type="range"]:focus::-webkit-slider-runnable-track {/* stylelint-disable-line */
   background: $color-darkblue;
 }
 
@@ -99,4 +103,49 @@ input[type="range"]::-ms-track {
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
+}
+
+@media (min-width: $tablet) {
+  .tools__check {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tools__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tools__slider {
+    display: block;
+    width: 200px;
+    position: inherit;
+  }
+
+  .tools__group-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 26px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $color-grey;
+  }
+}
+
+@media (min-width: $desktop) {
+  .tools {
+    flex-basis: 50%;
+  }
+
+  .tools__slider {
+    width: 288px;
+  }
+
+  .tools__group-wrapper {
+    padding: 10px 30px 26px 0;
+  }
+
+  .tools__check {
+    width: 45px;
+    height: 45px;
+  }
 }

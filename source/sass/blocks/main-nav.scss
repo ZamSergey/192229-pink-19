@@ -35,7 +35,7 @@
   top: 0;
   right: auto;
   left: 0;
-  background: url("/img/icon-menu-cross.svg") no-repeat center right;
+  background: url("../img/icon-menu-cross.svg") no-repeat center right;
 }
 
 .main-nav--closed .site-list {
@@ -43,7 +43,7 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background: url("/img/icon-menu-burger.svg") no-repeat center right;
+  background: url("../img/icon-menu-burger.svg") no-repeat center right;
 }
 
 @media (min-width: 660px) {

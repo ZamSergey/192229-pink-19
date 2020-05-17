@@ -43,6 +43,15 @@ img {
   box-sizing: border-box;
 }
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 @media (min-width: 660px) {
   .content-wrapper {
     width: 660px;
