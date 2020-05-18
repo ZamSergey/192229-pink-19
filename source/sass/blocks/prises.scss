@@ -1,5 +1,12 @@
 .prises__wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   overflow: scroll;
+  margin-bottom: 35px;
 }
 
 .prises {
@@ -76,6 +83,10 @@
 }
 
 @media (min-width: $tablet) {
+  .prises__list {
+    margin: 0 auto;
+  }
+
   .prises__head-item.prises__head-item--first {
     background: none;
     border: none;

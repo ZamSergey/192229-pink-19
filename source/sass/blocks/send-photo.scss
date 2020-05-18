@@ -16,3 +16,9 @@
   padding: 20px 0 40px;
   background-color: $color-grey-light;
 }
+
+@media (min-width: $tablet)  {
+  .send-photo__br--tabl {
+    display: none;
+  }
+}
