@@ -14,11 +14,10 @@
 }
 
 .social-list__link {
-  display: block;
+  display: flex;
   width: 45px;
   height: 45px;
   border: 2px solid $color-grey-light;
   border-radius: 50%;
-  display: flex;
   justify-content: space-around;
 }

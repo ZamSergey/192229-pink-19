@@ -104,11 +104,10 @@
 }
 
 @media (min-width: $tablet) {
-
   .album__mark {
-    left:auto;
+    left: auto;
     top: 58px;
-    right: calc(100vw / 2 - 310px);;
+    right: calc(100vw / 2 - 310px);
   }
 
   .album__item-footer {
@@ -137,7 +136,7 @@
 
   .album__panorame .album__like,
   .album__panorame .album__author {
-    order:-1;
+    order: -1;
     flex-basis: auto;
   }
 
@@ -146,7 +145,7 @@
   }
 
   .album__panorame .album__like-text {
-   margin-right: 16px;
+    margin-right: 16px;
   }
 
   .album__title--mob,

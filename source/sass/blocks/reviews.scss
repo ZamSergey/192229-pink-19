@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet)  {
+@media (min-width: $tablet) {
   .review__item {
     flex-direction: column-reverse;
   }
@@ -57,8 +57,8 @@
     font-size: 18px;
   }
 
-  .reviews__text:before {
-    content: ' ';
+  .reviews__text::before {
+    content: " ";
     width: 70px;
     height: 63px;
     background: gold;
