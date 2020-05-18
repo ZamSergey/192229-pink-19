@@ -1,7 +1,6 @@
 .contacts {
   background: $color-white;
   padding-top: 48px;
-  padding-bottom: 40px;
 }
 
 .contacts__title {
@@ -26,4 +25,44 @@
 
 .contacts__wrapper :last-child {
   margin-bottom: 0;
+}
+
+.contacts__map {
+  height: 200px;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-bottom: 40px;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 90px;
+    margin-bottom: -70px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center bottom;
+    background-size: 100%;
+  }
+
+  .contacts__map {
+    height: 400px;
+  }
+
+  .contacts__title {
+    flex-basis: 100%;
+  }
+
+  .contacts__info-title {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts__info-title {
+    flex-basis: 30%;
+  }
 }

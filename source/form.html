@@ -32,120 +32,123 @@
         </div>
       </nav></header>
     <main class="page-main">
-      <div class="page-main__plaisholder page-main__plaisholder--form">
+      <section class="page-main__plaisholder page-main__plaisholder--form">
         <h1 class="page-main__h1 content-wrapper">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
-      </div>
-      <div class="feedback__form-wrapper">
-        <form action="" class="page-main__feedback feedback">
-          <p class="feedback__title content-wrapper">
-            Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту!
-          </p>
-          <fieldset class="feedback__fieldset feedback__fieldset--fio feedback__fieldset--white">
-            <div class="feeldset_wrapper content-wrapper">
-              <label class="feedback__text-label feedback__surname">
-              <span class="feedback__fild-title">Фамилия:</span>
-              <input class="feedback__text-field" type="text" name="feedback_surname" placeholder="Укажите фамилию *" required>
-              </label>
-              <label class="feedback__text-label feedback__name">
-                <span class="feedback__fild-title">Имя:</span>
-                <input class="feedback__text-field" type="text" name="feedback_name" placeholder="Введите ваше имя *" required>
-              </label>
-              <label class="feedback__text-label feedback__patronymic">
-                <span class="feedback__fild-title">Отчество:</span>
-                <input class="feedback__text-field" type="text" name="feedback_patronymic" placeholder="Ну и отчество тоже" required>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="feedback__fieldset feedback__fieldset--achievement feedback__fieldset--grey">
-            <div class="feeldset_wrapper content-wrapper">
-              <p class="feedback__fieldset-title">
-                Ваши безбашенные<br>
-                достижения в путешествии
-              </p>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_shark">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Сделал селфи с акулой</span>
-              </label>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_beach">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Обгорел на пляже</span>
-              </label>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_chak">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Видел Чака Норриса</span>
-              </label>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_gift">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Накупил сувениров</span>
-              </label>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_tower">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Удержал башню</span>
-              </label>
-              <label class="feedback__check-label feedback__achievement">
-                <input class="visually-hidden" type="checkbox" name="check_hotel">
-                <span class="feedback__checkbox"></span>
-                <span class="feedback__check-title">Разгромил отель</span>
-              </label></div>
-          </fieldset>
-          <fieldset class="feedback__fieldset feedback__fieldset--user-contacts feedback__fieldset--white">
-            <div class="feeldset_wrapper content-wrapper">
-              <label class="feedback__text-label feedback__surname">
-                <span class="feedback__fild-title">Номер телефона</span>
-                <input class="feedback__text-field" type="tel" name="feedback_phone" placeholder="Номер, пожалуйста ">
-              </label>
-              <label class="feedback__text-label feedback__name">
-                <span class="feedback__fild-title">Адрес почты</span>
-                <input class="feedback__text-field" type="email" name="feedback_email" placeholder="Введите почту *" required>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="feedback__fieldset feedback__fieldset--devise-type feedback__fieldset--grey">
-            <div class="feeldset_wrapper content-wrapper">
-              <p class="feedback__fieldset-title">
-                С каким приложением<br>путешествовали?
-              </p>
-              <label class="feedback__radio-label feedback__devise-type">
-                <input class="visually-hidden" type="radio" name="feedback_devise_type">
-                <span class="feedback__radio"></span>
-                <span class="feedback__check-title">Pink для iOS</span>
-              </label>
-              <label class="feedback__radio-label feedback__devise-type">
-                <input class="visually-hidden" type="radio" name="feedback_devise_type">
-                <span class="feedback__radio"></span>
-                <span class="feedback__check-title">Pink на Android</span>
-              </label>
-              <label class="feedback__radio-label feedback__devise-type">
-                <input class="visually-hidden" type="radio" name="feedback_devise_type">
-                <span class="feedback__radio"></span>
-                <span class="feedback__check-title">Windows Phone</span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="feedback__fieldset feedback__fieldset--white">
-            <div class="feeldset_wrapper content-wrapper">
-              <p class="feedback__fieldset-title feedback__fieldset-title--smallmarg">
-              Опишите свои эмоции
-              </p>
-              <textarea class="feedback__feeling" name="feedback__feeling" cols="30" rows="10"
-                        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
-          <div class="feedback__button-wrapper content-wrapper">
-            <button class="button button--rect " type="button">
+      </section>
+      <section class="page-main__feedback feedback">
+        <p class="feedback__title content-wrapper">
+          Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту!
+        </p>
+        <form action="" class="feedback__form">
+          <div class="feedback__fieldset-container">
+            <fieldset class="feedback__fieldset feedback__fieldset--fio">
+              <div class="feeldset_wrapper content-wrapper">
+                <label class="feedback__text-label feedback__surname">
+                  <span class="feedback__fild-title">Фамилия:</span>
+                  <input class="feedback__text-field" type="text" name="feedback_surname" placeholder="Укажите фамилию *" required>
+                </label>
+                <label class="feedback__text-label feedback__name">
+                  <span class="feedback__fild-title">Имя:</span>
+                  <input class="feedback__text-field" type="text" name="feedback_name" placeholder="Введите ваше имя *" required>
+                </label>
+                <label class="feedback__text-label feedback__patronymic">
+                  <span class="feedback__fild-title">Отчество:</span>
+                  <input class="feedback__text-field" type="text" name="feedback_patronymic" placeholder="Ну и отчество тоже" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--achievement">
+              <div class="feeldset_wrapper content-wrapper">
+                <p class="feedback__fieldset-title">
+                  <span class="feedback__fieldset-wrapper--wrapper">Ваши безбашенные<br>
+                                    достижения в путешествии</span>
+                </p>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--shark">
+                  <input class="visually-hidden" type="checkbox" name="check_shark">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Сделал селфи с акулой</span>
+                </label>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--beech">
+                  <input class="visually-hidden" type="checkbox" name="check_beach">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Обгорел на пляже</span>
+                </label>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--chuck">
+                  <input class="visually-hidden" type="checkbox" name="check_chak">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Видел Чака Норриса</span>
+                </label>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--gift">
+                  <input class="visually-hidden" type="checkbox" name="check_gift">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Накупил сувениров</span>
+                </label>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--tower">
+                  <input class="visually-hidden" type="checkbox" name="check_tower">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Удержал башню</span>
+                </label>
+                <label class="feedback__check-label feedback__achievement feedback__achievement--hotel">
+                  <input class="visually-hidden" type="checkbox" name="check_hotel">
+                  <span class="feedback__checkbox"></span>
+                  <span class="feedback__check-title">Разгромил отель</span>
+                </label></div>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--user-contacts">
+              <div class="feeldset_wrapper content-wrapper">
+                <p class="feedback__fieldset-title">
+                  <span class="feedback__fieldset-wrapper--wrapper">Контактная информация</span>
+                </p>
+                <label class="feedback__text-label feedback__phone">
+                  <span class="feedback__fild-title">Номер телефона</span>
+                  <input class="feedback__text-field" type="tel" name="feedback_phone" placeholder="Номер, пожалуйста ">
+                </label>
+                <label class="feedback__text-label feedback__email">
+                  <span class="feedback__fild-title">Адрес почты</span>
+                  <input class="feedback__text-field" type="email" name="feedback_email" placeholder="Введите почту *" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--devise-type">
+              <div class="feeldset_wrapper content-wrapper">
+                <p class="feedback__fieldset-title">
+                  <span class="feedback__fieldset-wrapper--wrapper">С каким приложением<br>путешествовали?</span>
+                </p>
+                <label class="feedback__radio-label feedback__devise-type">
+                  <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                  <span class="feedback__radio"></span>
+                  <span class="feedback__check-title">Pink для iOS</span>
+                </label>
+                <label class="feedback__radio-label feedback__devise-type">
+                  <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                  <span class="feedback__radio"></span>
+                  <span class="feedback__check-title">Pink на Android</span>
+                </label>
+                <label class="feedback__radio-label feedback__devise-type">
+                  <input class="visually-hidden" type="radio" name="feedback_devise_type">
+                  <span class="feedback__radio"></span>
+                  <span class="feedback__check-title">Windows Phone</span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="feedback__fieldset feedback__fieldset--user-feedback">
+              <div class="feeldset_wrapper content-wrapper">
+                <p class="feedback__fieldset-title feedback__fieldset-title--smallmarg">
+                  <span class="feedback__fieldset-wrapper--wrapper">Опишите свои эмоции</span>
+                </p>
+                <textarea class="feedback__feeling" name="feedback__feeling" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="feedback__footer content-wrapper">
+            <button class="feedback__send-dutton button button--rect " type="button">
               Отправить форму
             </button>
-          </div>
-          <p class="feedback__explanation content-wrapper"><span class="feeback__sup">*</span> — обязательные поля</p>
-        </form>
-      </div>
+            <p class="feedback__explanation"><span class="feeback__sup">*</span> — обязательные поля</p>
+          </div></form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper content-wrapper">
