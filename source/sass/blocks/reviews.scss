@@ -59,9 +59,9 @@
 
   .reviews__text::before {
     content: " ";
-    width: 70px;
-    height: 63px;
-    background: gold;
+    width: 90px;
+    height: 70px;
+    background: url("../img/icon-quotes.svg") no-repeat center center;
     display: block;
     margin: 0 auto 50px;
   }
