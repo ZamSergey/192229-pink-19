@@ -5,7 +5,7 @@
 .album__title {
   @include font-param(14px, 100, 30px);
   text-align: center;
-  margin: 0 0 55px;
+  margin-bottom: 55px;
 }
 
 .album__name {
@@ -32,6 +32,16 @@
   text-transform: uppercase;
   color: $color-pink;
   margin: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.album__like-icon {
+  display: block;
+  width: 14px;
+  height: 24px;
+  background: url("../img/icon-heart.svg") no-repeat 0 center;
+  margin-right: 17px;
 }
 
 .album__list {
@@ -42,7 +52,7 @@
   flex-direction: column;
 }
 
-.album__list :last-child {
+.album__list > :last-child {
   margin-bottom: 0;
 }
 
@@ -64,13 +74,89 @@
 
 .album__item-footer {
   background-color: $color-grey-light;
-  padding: 18px;
+  padding: 20px 18px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
+.album__title--tab {
+  display: none;
+}
+
+.album__panorame {
+  position: relative;
+}
+
+.album__mark {
+  position: absolute;
+  top: 0;
+  left: calc(100vw - 160px);
+  background: $color-pink;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  width: 140px;
+  height: 36px;
+  text-align: center;
+  line-height: 38px;
+  color: $color-white;
+}
+
 @media (min-width: $tablet) {
+  .album__mark {
+    left: auto;
+    top: 58px;
+    right: calc(100vw / 2 - 310px);
+  }
+
+  .album__item-footer {
+    padding: 25px;
+  }
+
+  .album__like {
+    justify-content: space-between;
+  }
+
+  .album__like-icon {
+    order: 2;
+    margin: 0;
+  }
+
+  .album__panorame .album__item-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .album__panorame .album__like,
+  .album__author {
+    flex-basis: 50%;
+  }
+
+  .album__panorame .album__like,
+  .album__panorame .album__author {
+    order: -1;
+    flex-basis: auto;
+  }
+
+  .album__panorame .album__author {
+    flex-grow: 1;
+  }
+
+  .album__panorame .album__like-text {
+    margin-right: 16px;
+  }
+
+  .album__title--mob,
+  .album__title--besc {
+    display: none;
+  }
+
+  .album__title--tab {
+    display: inline-block;
+  }
+
   .album__title {
     font-size: 18px;
     line-height: 30px;
@@ -89,7 +175,7 @@
     margin-right: 20px;
   }
 
-  .album__list :last-child {
+  .album__list > :last-child {
     margin-bottom: 20px;
   }
 
@@ -103,6 +189,18 @@
 }
 
 @media (min-width: $desktop) {
+  .album__mark {
+    right: calc(100vw / 2 - 470px);
+  }
+
+  .album__title--tab {
+    display: none;
+  }
+
+  .album__title--besc {
+    display: inline-block;
+  }
+
   .album__list {
     margin-right: -20px;
   }

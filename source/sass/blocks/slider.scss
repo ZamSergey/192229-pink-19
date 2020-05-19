@@ -4,15 +4,48 @@
   align-items: center;
 }
 
+.slider__toggles > .slider__toggle:last-child {
+  margin-right: 0;
+}
+
 .slider__toggle {
   display: block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: $color-grey;
+  margin-right: 15px;
 }
 
 .slider__toggle--active {
   border: 3px solid $color-darkblue;
   background-color: transparent;
+}
+
+@media (min-width: $desktop) {
+  .slider__list {
+    position: relative;
+  }
+
+  .slider__list::before {
+    content: " ";
+    top: 45%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: gold;
+    display: block;
+  }
+
+  .slider__list::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: gold;
+    top: 45%;
+    right: 0;
+  }
 }

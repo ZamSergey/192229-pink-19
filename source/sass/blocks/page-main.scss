@@ -50,7 +50,7 @@
 }
 
 .page-main__album {
-  padding-top: 55px;
+  padding-top: 50px;
 }
 
 .page-main__feedback {
@@ -98,7 +98,7 @@
   }
 
   .page-main__plaisholder--photo {
-    padding-bottom: 100px;
+    padding-bottom: 105px;
   }
 
   .page-main__plaisholder--form {
@@ -125,6 +125,11 @@
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat 50% 175px,
       url("../img/bg-back-desktop@1x.jpg") no-repeat center top,
       $color-darkblue;
+  }
+
+  .page-main__plaisholder--form {
+    padding-top: 170px;
+    padding-bottom: 90px;
   }
 
   .page-main__h1--download {

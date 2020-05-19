@@ -12,3 +12,12 @@
   width: 45px;
   height: 45px;
 }
+
+.social-list__link {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: 2px solid $color-grey-light;
+  border-radius: 50%;
+  justify-content: space-around;
+}
