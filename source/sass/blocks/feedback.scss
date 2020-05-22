@@ -160,10 +160,11 @@
 
 .feedback__text-label {
   display: block;
+  margin-bottom: 20px;
 }
 
-.feedback__text-label:not(:last-child) {
-  margin-bottom: 20px;
+.feedback__text-labellast-child {
+  margin-bottom: 0;
 }
 
 .feedback__fieldset .feedback__check-label:not(:last-child) {
@@ -189,7 +190,28 @@
   align-items: center;
 }
 
+.feedback__title--hide {
+  display: none;
+}
+
+.feedback__br--tabl,
+.feedback__br--desc {
+  display: none;
+}
+
 @media (min-width: $tablet) {
+  .feedback__br--tabl {
+    display: block;
+  }
+
+  .feedback__br--mob {
+    display: none;
+  }
+
+  .feedback__title--hide {
+    display: inline;
+  }
+
   .feedback__footer {
     flex-direction: row;
     justify-content: space-between;
@@ -316,18 +338,48 @@
   .feedback__phone {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
   }
 
   .feedback__email .feedback__text-field,
   .feedback__phone .feedback__text-field {
     margin-bottom: 15px;
   }
+
+  .feedback__phone::after,
+  .feedback__email::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 62px;
+    top: 0;
+    right: 0;
+  }
+
+  .feedback__phone::after {
+    background: $color-grey-light url("../img/icon-phone.svg") no-repeat center center;
+  }
+
+  .feedback__email::after {
+    background: $color-grey-light url("../img/icon-mail.svg") no-repeat center center;
+  }
 }
 
 @media (min-width: $desktop) {
   .feedback__fieldset-container {
+    width: 960px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .feedback__br--tabl {
+    display: none;
+  }
+
+  .feedback__br--desc {
+    display: block;
   }
 
   .feedback__fieldset--fio {
@@ -358,6 +410,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .feedback__fieldset--user-contacts .feeldset_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__phone,
+  .feedback__email {
+    flex-basis: 375px;
+    margin-bottom: 0;
   }
 
   .feedback__checkbox {
