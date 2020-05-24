@@ -41,15 +41,18 @@
     padding-bottom: 40px;
   }
 
+  .contacts__block {
+    padding-bottom: 90px;
+    margin-bottom: -70px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center bottom;
+    background-size: 100%;
+  }
+
   .contacts__wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 90px;
-    margin-bottom: -70px;
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat center bottom;
-    background-size: 100%;
   }
 
   .contacts__map {
@@ -58,6 +61,7 @@
 
   .contacts__title {
     flex-basis: 100%;
+    font-size: 40px;
   }
 
   .contacts__info-title {
@@ -68,5 +72,9 @@
 @media (min-width: $desktop) {
   .contacts__info-title {
     flex-basis: 30%;
+  }
+
+  .contacts__title {
+    font-size: 50px;
   }
 }

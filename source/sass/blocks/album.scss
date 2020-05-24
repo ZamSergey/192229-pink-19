@@ -104,6 +104,10 @@
 }
 
 @media (min-width: $tablet) {
+  .album__img-wrapper {
+    height: 300px;
+  }
+
   .album__mark {
     left: auto;
     top: 58px;
@@ -184,11 +188,16 @@
   }
 
   .album__img-wrapper--wide {
+    text-align: center;
     height: 510px;
   }
 }
 
 @media (min-width: $desktop) {
+  .album__img-wrapper {
+    height: 400px;
+  }
+
   .album__mark {
     right: calc(100vw / 2 - 470px);
   }
