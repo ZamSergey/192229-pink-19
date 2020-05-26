@@ -62,14 +62,23 @@
   margin-bottom: 20px;
 }
 
+.album__item-img.full-width {
+  display: inline-block;
+}
+
 .album__img-wrapper {
   height: 180px;
-  background-color: gold;
+  text-align: center;
+}
+
+.album__img-wrapper .album__item-img {
+  width: 100%;
 }
 
 .album__img-wrapper--wide {
-  height: 140px;
-  background-color: gold;
+  min-height: 140px;
+  height: auto;
+  overflow: hidden;
 }
 
 .album__item-footer {
