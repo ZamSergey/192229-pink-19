@@ -20,7 +20,7 @@
 .tools__check--crop:checked ~ * [for="crop"],
 .tools__check--blur:checked ~ * [for="blur"],
 .tools__check--contrast:checked ~ * [for="contrast"] {
-  background-color: red;
+  background-color: gold;
 }
 
 .tools__check--crop:checked ~ * .tools__slider-crop,

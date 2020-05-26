@@ -52,15 +52,30 @@ img {
   margin-right: -50vw;
 }
 
-@media (min-width: 660px) {
+.wide-img {
+  margin-left: calc(-100vw / 2 + 320px / 2);
+  margin-right: calc(-100vw / 2 + 320px / 2);
+}
+
+@media (min-width: $tablet) {
   .content-wrapper {
     width: 660px;
   }
+
+  .wide-img {
+    margin-left: calc(-100vw / 2 + 660px / 2);
+    margin-right: calc(-100vw / 2 + 660px / 2);
+  }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop) {
   .content-wrapper {
     padding: 0 10px;
     width: 960px;
+  }
+
+  .wide-img {
+    margin-left: calc(-100vw / 2 + 960px / 2);
+    margin-right: calc(-100vw / 2 + 960px / 2);
   }
 }
